@@ -12,3 +12,10 @@ p {
 ::backdrop {
             background-color: rgba(0, 0, 0, 0.8);
         }
+.textblock {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
