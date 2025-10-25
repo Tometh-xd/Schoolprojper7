@@ -12,6 +12,23 @@ p {
 ::backdrop {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+.textblocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* keeps them centered and evenly aligned */
+  gap: 16px;
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+
+.textblock-link {
+  text-decoration: none;
+  flex: 1 1 220px; /* allows flexible resizing */
+  max-width: 220px; /* keeps consistent width */
+}
+
 .textblock {
   background-color: #efefef;
   color: #1d68b7;
