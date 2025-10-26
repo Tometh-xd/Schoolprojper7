@@ -25,8 +25,8 @@ p {
 
 .textblock-link {
   text-decoration: none;
-  flex: 1 1 220px; /* allows flexible resizing */
-  max-width: 220px; /* keeps consistent width */
+ 
+  
 }
 
 .textblock {
@@ -50,10 +50,102 @@ p {
 .textblock h2 {
   margin: 0 0 8px 0;
   font-size: 1.1rem;
+  color:#222;
+  text-align: center;
 }
 
 .textblock p {
   margin: 0;
   font-size: 0.8rem;
   color: #333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #5b4bff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 10%;
+  background: linear-gradient(to right, #5b4bff, #8b74ff);
+  color: #fff;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #fff;
+  color: #5b4bff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 10%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 24px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.p.textyap{
+    padding: 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 20px auto;
 }
