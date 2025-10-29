@@ -30,8 +30,10 @@ p {
   
 }
 
-.textblock .img {
-  flex: 0 1 auto;
+.textblock img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover; 
 }
 
 .textblock {
@@ -45,6 +47,8 @@ p {
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 220px;
+  height: 320px;
 }
 
 
