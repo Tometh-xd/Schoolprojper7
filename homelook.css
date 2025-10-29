@@ -51,7 +51,17 @@ p {
   height: 320px;
 }
 
-
+.blckabout{
+    
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    font-size: 16px;
+    color: #222;
+    text-align: left;
+    max-width: 300px;
+    
+}
 .textblocks {
   flex: 0 1 auto;
 }
