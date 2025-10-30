@@ -12,6 +12,34 @@ p {
 ::backdrop {
             background-color: rgba(0, 0, 0, 0.8);
         }
+.bodyNthn {/* Home look body style but by nathan*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #00090C;
+;
+           
+            padding: 20px;
+        }
+.gradient-background{
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.aboutpagebackground{
+  background: url("background\WhatsApp Image 2025-10-29 at 11.03.55_1053e3ee.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+   
+}
+
+
+
+
+
+
+
+
+
 
 .textblocks-container {
   display: flex;
@@ -22,6 +50,12 @@ p {
   max-width: 2000px;
   margin: 40px auto;
   padding: 0 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .textblock-link {
@@ -51,17 +85,9 @@ p {
   height: 320px;
 }
 
-.blckabout{
+
     
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 800px;
-    font-size: 16px;
-    color: #222;
-    text-align: left;
-    max-width: 300px;
-    
-}
+
 .textblocks {
   flex: 0 1 auto;
 }
@@ -162,7 +188,13 @@ body {
 footer {
   text-align: center;
   padding: 20px;
-  color: #777;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+}
+.footerbackground{
+     text-align: center;
+  padding: 20px;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -175,7 +207,7 @@ footer {
     margin: 20px auto;
 }
 
-.blcky{
+.blcky{ /* Contact block */
     background-color: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
@@ -186,21 +218,40 @@ footer {
     align-items: center;
     
 }
+.blckabout{ /* About page block */
+    
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    font-size: 16px;
+    color: #222;
+    text-align: left;
+    max-width: 800px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
-.centerimportant{
+.centerimportant{ /* Centered important text(attention you dont want my heart) */
     text-align: center !important;
     font-size: larger;
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.segriIMGabout{
+.segriIMGabout{ /* About page image style  */
     display: block;
     align-items: right;
-    width: 40%;
+    width: 80%;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 40px;
+    float: right;
+    margin-left: 20px;
+    width: 250px; /* change to taste */
+   border-radius: 12px;
+   object-fit: cover;
+
 }
 /* Contact info (Jaïr)*/
 
@@ -208,4 +259,18 @@ footer {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
+}
+
+.help-page { /* Help page background */
+  background: 
+    linear-gradient(
+      135deg,
+      rgba(255, 0, 200, 0.35),   /* top overlay darkness */
+      rgba(0, 200, 255, 0.35)    /* bottom fade */
+    ),
+    url("background/iphone-500291_1280-1024x682.jpg") no-repeat center center;
+
+  background-size: cover;
+  background-attachment: fixed; /* optional */
+  color: white; /* text readable over dark background */
 }
