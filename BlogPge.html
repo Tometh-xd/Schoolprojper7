@@ -15,7 +15,7 @@
         <li><a href="BlogPge.html" class="active">Blog</a></li>
         <li><a href="Aboutpge.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="menu">
+         <li class="menu">
           <button class="menu-btn" id="menuBtn">☰</button>
           <div class="dropdown-menu" id="dropdownMenu">
             <a href="toxicity.html" class="dropdown-item">Cyberbullying</a>
@@ -24,11 +24,31 @@
             <a href="Discordmods.html" class="dropdown-item">Safety</a>
             <a href="socialwars.html" class="dropdown-item">Social Wars</a>
           </div>
+        </li>
       </ul>
     </nav>
   <footer>
     <p>© 2025 AI Research Hub. All rights reserved.</p>
   </footer>
-   <script src="WebsiteJS.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    
+    if (menuBtn && dropdownMenu) {
+        menuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', () => {
+                dropdownMenu.classList.remove('active');
+            });
+        });
+    }
+});
+</script>
