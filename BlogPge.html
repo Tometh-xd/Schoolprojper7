@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="homelook.css">
+    
     <script src="WebsiteJS.js" defer></script>
     <title>My Blog</title>
 </head>
-<body class="bodyNthn">
+<body class="bodyblog">
     <nav class="navbar">
       <h1 class="logo">Lost (bad) connection</h1>
       <ul class="nav-links">
@@ -27,12 +28,93 @@
         </li>
       </ul>
     </nav>
+      <div class="slideshow-container">
+  <img class="slide" src="slideshow/DSC00203.JPG" alt="Class photo 1">
+  <img class="slide" src="slideshow/DSC00217.JPG" alt="Class photo 2">
+  <img class="slide" src="slideshow/DSC00375.JPG" alt="Class photo 3">
+  <img class="slide" src="slideshow/IMG-20231124-WA0000.jpeg" alt="Class photo 4">
+  <img class="slide" src="slideshow/IMG-20240215-WA0004.jpg" alt="Class photo 5">    
+  <img class="slide" src="slideshow/IMG-20240614-WA0000.jpg" alt="Class photo 6">
+  <img class="slide" src="slideshow/Screenshot_20250127_193432_WhatsApp.jpg" alt="Class photo 7">
+  <img class="slide" src="slideshow/Screenshot_20250127_193446_WhatsApp.jpg" alt="Class photo 8">
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <p class="centerimportantblog">WELCOME TO OUR COMMUNITY</p>
+
+  <div class="twitterpostL-container">
+    <div class="twitterpostL">
+      <h2 class="raleway-text">"OMG <Table>THIS IS BRILLIANT"</Table></h2>
+      <p class="raleway-text">@Assshyyknee</h2>
+      <p class="timestamp">Posted on January 15, 2025</p>
+      <p class="blogpost-content">
+        Venting about my experience here is so relieving! The support and resources provided have been a game-changer for me.
+      </p>
+    </div>
+  </div>
+
+  <div class="twitterpostR-container">
+    <div class="twitterpostR">
+      <h2 class="raleway-text">"I HATE MYSELF"</h2>
+      <p class="raleway-text">@UWUSHU</p>
+      <p class="timestamp">Posted on February 10, 2025</p>
+      <p class="blogpost-content">
+        I've been struggling with this AI stuff for a year now and I feel ashamed of it? "how can I be so weak?" I'm glad I get to be here with others like me.
+      </p>
+    </div>
+  </div>
+
+  <div class="twitterpostL-container">
+    <div class="twitterpostL">
+      <h2 class="raleway-text">"I DON'T FW IT ANYMORE"</h2>
+      <p class="raleway-text">@Goonette67</p>
+      <p class="timestamp">Posted on March 5, 2025</p>
+      <p class="blogpost-content">I dead*** used to submit to my impulses all the time till i got addicted especially when im stressed. This community has helped me take control back. i started when I was 13, I'm 19 now and I feel so much better with this community.
+        
+      </p>
+    </div>    
+  </div>
+
+  <div class="twitterpostR-container">
+    <div class="twitterpostR">
+    <h2 class="raleway-text">"WHERE DO I EVEN START WITH MY SIBLINGS ONLINE SAFETY???"</h2>
+      <p class="raleway-text">@Venessahutch</p>
+      <p class="timestamp">Posted on April 1, 2025</p>
+      <p class="blogpost-content">
+        I've always been concerned about my younger siblings' safety online. Finding this community has given me the tools and knowledge to help protect them better. Thank you all!
+      </p>
+    </div>
+  </div>
+
+  <div class="twitterpostL-container">
+    <div class="twitterpostL">
+      <h2 class="raleway-text">"USED TO RED-PILL"</h2>
+      <p class="timestamp">Posted on May 20, 2025</p>
+      <p class="raleway-text">@BatemanTATE</p>
+      <p class="blogpost-content">
+        I used to be into those online "red-pill" communities that promote toxic masculinity. Joining this community has helped me unlearn those harmful beliefs and embrace a healthier mindset.
+        And im willing to admit it was affecting my mental health negatively.
+      </p>
+    </div>
+  </div>
+
   <footer>
-    <p>© 2025 AI Research Hub. All rights reserved.</p>
+    <p>© 2025 GbaitResearch. All rights reserved.</p>
   </footer>
+
   <script src="script.js" defer></script>
 </body>
 </html>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.getElementById('menuBtn');
@@ -51,4 +133,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+let slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+// Start slideshow
+showSlide(currentIndex);
+setInterval(nextSlide, 3000); // Change every 3 seconds
+
 </script>
