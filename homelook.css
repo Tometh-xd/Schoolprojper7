@@ -470,3 +470,19 @@ footer {
 .twitterpostL, .twitterpostR {
   box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
 }
+
+.blog-page { /* Help page background */
+  background: 
+    linear-gradient(
+      135deg,
+      rgba(3, 99, 254, 0.35),   /* top overlay darkness */
+      rgba(252, 253, 253, 0.35)    /* bottom fade */
+    ),
+    url("background/0_m2hDLnbxA2FjBAkD.jpg") no-repeat center center;
+
+  background-size: cover;
+  background-attachment: fixed; /* optional */
+  color: white; /* text readable over dark background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+  padding: 20px;
+}
