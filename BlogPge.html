@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="homelook.css">
+    <script src="WebsiteJS.js" defer></script>
     <title>My Blog</title>
 </head>
 <body class="bodyNthn">
@@ -14,6 +15,17 @@
         <li><a href="BlogPge.html" class="active">Blog</a></li>
         <li><a href="Aboutpge.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
+
+                 <li class="menu">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="toxicity.html" class="dropdown-item">Cyberbullying</a>
+            <a href="Joi.html" class="dropdown-item">AI</a>
+            <a href="Goener.html" class="dropdown-item">Internet Addiction</a>
+            <a href="Discordmods.html" class="dropdown-item">Safety</a>
+            <a href="socialwars.html" class="dropdown-item">Social Wars</a>
+        </div>
+    </li>
       </ul>
     </nav>
   <footer>
@@ -21,3 +33,22 @@
   </footer>
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    
+    if (menuBtn && dropdownMenu) {
+        menuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', () => {
+                dropdownMenu.classList.remove('active');
+            });
+        });
+    }
+});
+</script>
