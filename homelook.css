@@ -356,7 +356,7 @@ footer {
 .slideshow-container {
   width: 100%;
   max-width: 500px;
-  height: 300px;
+  height: 400px;
   position: relative;
   margin: auto;
   display: flex;
@@ -368,7 +368,7 @@ footer {
 }
 
 .slide {
-  max-width: 65%;  /* make the image smaller horizontally */
+  max-width: 100%;  /* make the image smaller horizontally */
   max-height: 80%; /* make the image smaller vertically */
   object-fit: contain; /* keep aspect ratio without stretching */
   position: absolute;
@@ -421,6 +421,7 @@ footer {
  font-weight: bolder;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: xxx-large;
+  text-decoration:underline;
 }
 
 .SupportR {
@@ -428,6 +429,7 @@ footer {
   font-weight: bolder;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: xxx-large;
+  text-decoration: underline;
 }
 
 /* Text inside posts */
