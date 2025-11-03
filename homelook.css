@@ -303,7 +303,7 @@ footer {
 
 .centerimportant { /* Centered important text(attention you dont want my heart) */
     text-align: center !important;
-    font-size: larger;
+    font-size: xx-large;
     font-weight: bold;
     
 }
