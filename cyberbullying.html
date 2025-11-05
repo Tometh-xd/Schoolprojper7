@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joi</title>
+    <link rel="stylesheet" href="homelook.css" />
+
+    <script src="WebsiteJS.js"></script>
+</head>
+<body class="bodyNthn">
+
+      <nav class="navbar">
+      <h1 class="logo">Lost (bad) connection</h1>
+      <ul class="nav-links">
+        <li><a href="Homeinfo.html">Home</a></li>
+        <li><a href="BlogPge.html">Blog</a></li>
+        <li><a href="Aboutpge.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+
+    <p></p>
+                 <li class="menu">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="cyberbullying.html" class="dropdown-item">Cyberbullying</a>
+            <a href="AI.html" class="dropdown-item">AI</a>
+            <a href="Addiction.html" class="dropdown-item">Internet Addiction</a>
+            <a href="safety.html" class="dropdown-item">Safety</a>
+            <a href="socialwars.html" class="dropdown-item">Social Wars</a>
+        </div>
+    </li>
+      </ul>
+    </nav>
+      <div class="textblocks-container">
+    <div class="textblocks">
+        <div class="textblock">
+          <h2>Cyberbullying</h2>
+          <p>Words can hurt, even from behind the screen.</p>
+        </div>
+      </a>
+
+    <p>**Speak Their Language:**</p>
+<p>-"That moment when you open TikTok and immediately see some wild take that ruins your day" </p>
+<p>-"When group chats turn into argument zones over politics/gender/whatever" </p>
+<p>-"Seeing the same hateful comments everywhere - it's not just you noticing" </p>
+
+**Real Stats That Hit Home:**
+- "50% of people our age see hate content every 3 months"
+- "The more you react to toxic posts, the more the algorithm shows you"
+- "Online arguments literally predict real-world hate crimes"
+
+**Relatable Examples:**
+- "That 'man vs bear' trend that had everyone fighting?"
+- "When comment sections become war zones"
+- "Seeing your friends get dragged into endless online arguments"</p>
+
+    <footer>
+        <small>Created: <!-- YYYY-MM-DD --> </small>
+    </footer>
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    
+    if (menuBtn && dropdownMenu) {
+        menuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', () => {
+                dropdownMenu.classList.remove('active');
+            });
+        });
+    }
+});
+</script>

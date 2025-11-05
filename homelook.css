@@ -31,12 +31,13 @@ p {
   background-position: center;
    
 }
-
-
-
-
-
-
+/*home video*/
+.vid-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
 
 .textblocks-container {
   display: grid;
@@ -73,7 +74,7 @@ p {
 .textblock h2 {
   font-size: 1.3rem;
   margin: 12px 0 6px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .textblock p {
@@ -463,6 +464,7 @@ footer {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+/*contact form (Jaïr)*/
 .userproblem {
   display: flex;
   flex-direction: column;
@@ -504,7 +506,7 @@ label {
   color: #555;
 }
 
-input[type="text"],input[type="email"],textarea {
+input[type="text"],input[type="email"],textarea {     /*input gedeelte */
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -533,5 +535,4 @@ input::placeholder,
   textarea::placeholder {
   color: #999;
 }
-
-
+/*end van contact form (Jaïr)*/
