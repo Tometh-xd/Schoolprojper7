@@ -320,6 +320,7 @@ footer {
     width: 250px; /* change to taste */
    border-radius: 12px;
    object-fit: cover;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.16);
 
 }
 /* Contact info (Jaïr)*/
@@ -404,6 +405,7 @@ footer {
   padding: 15px;
   max-width: 500px;
   font-family: "Helvetica Neue", Arial, sans-serif;
+   box-shadow: 0 10px 22px rgba(0,0,0,0.16);
 }
 
 .twitterpostL {
